@@ -197,7 +197,7 @@ If "on", the guest page will be allowed to open new windows.
 ### `webpreferences`
 
 ```html
-<webview src="https://github.com" webpreferences="allowDisplayingInsecureContent, javascript=no"></webview>
+<webview src="https://github.com" webpreferences="allowRunningInsecureContent, javascript=no"></webview>
 ```
 
 A list of strings which specifies the web preferences to be set on the webview, separated by `,`.
