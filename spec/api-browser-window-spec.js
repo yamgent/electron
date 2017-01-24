@@ -1667,8 +1667,8 @@ describe('BrowserWindow module', function () {
           showPanelIntervalId = setInterval(function () {
             if (w && w.devToolsWebContents) {
               var showLastPanel = function () {
-                var lastPanelId = WebInspector.inspectorView._tabbedPane._tabs.peekLast().id
-                WebInspector.inspectorView.showPanel(lastPanelId)
+                var lastPanelId = UI.inspectorView._tabbedPane._tabs.peekLast().id
+                UI.inspectorView.showPanel(lastPanelId)
               }
               w.devToolsWebContents.executeJavaScript(`(${showLastPanel})()`)
             } else {
@@ -1755,8 +1755,8 @@ describe('BrowserWindow module', function () {
         showPanelIntervalId = setInterval(function () {
           if (w && w.devToolsWebContents) {
             var showLastPanel = function () {
-              var lastPanelId = WebInspector.inspectorView._tabbedPane._tabs.peekLast().id
-              WebInspector.inspectorView.showPanel(lastPanelId)
+              var lastPanelId = UI.inspectorView._tabbedPane._tabs.peekLast().id
+              UI.inspectorView.showPanel(lastPanelId)
             }
             w.devToolsWebContents.executeJavaScript(`(${showLastPanel})()`)
           } else {
